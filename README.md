@@ -92,20 +92,20 @@ Terraform - Infrastructure as Code
 
 HTML/CSS/JavaScript - Responsive frontend
 
-📁 Project Structure
+ Project Structure
 text
 Sankofa/
-├── main.tf                 # Main Terraform configuration
-├── variables.tf           # Terraform variables
-├── outputs.tf            # Terraform outputs
-├── templates/
-│   └── lambda_function.py # AWS Lambda function (Python)
-├── frontend/
-│   ├── index.html        # Main web interface
-│   ├── style.css         # CSS styles
-│   └── script.js         # JavaScript functionality
-└── README.md             # This file
-🔧 Configuration
+ main.tf                 # Main Terraform configuration
+variables.tf           # Terraform variables
+ outputs.tf            # Terraform outputs
+templates/
+   lambda_function.py # AWS Lambda function (Python)
+ frontend/
+index.html        # Main web interface
+style.css         # CSS styles
+script.js         # JavaScript functionality
+README.md             # This file
+Configuration
 Environment Variables
 Variable	Description	Default
 BUCKET_NAME	S3 bucket for audio storage	Auto-generated
@@ -117,7 +117,7 @@ Ivy	Child	US English
 Justin	Child	US English
 Kendra	Female	US English
 Kimberly	Female	US English
-💰 Cost Estimation
+ Cost Estimation
 AWS Lambda: ~$0.0000002 per request
 
 Amazon Polly: ~$0.000004 per character
@@ -128,7 +128,7 @@ API Gateway: ~$0.000001 per request
 
 *Estimated cost for 10,000 requests: ~$1-2/month*
 
-🚦 Performance
+ Performance
 Response Time: < 2 seconds (P95)
 
 Availability: 99.95% uptime
