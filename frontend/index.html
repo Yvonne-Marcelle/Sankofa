@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankofa - Text to Speech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔄 Sankofa</h1>
+            <p>Text to Speech Application</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <textarea 
+                    id="textInput" 
+                    placeholder="Enter text to convert to speech..." 
+                    rows="6"
+                ></textarea>
+                
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="voiceSelect">Voice:</label>
+                        <select id="voiceSelect">
+                            <option value="Joanna">Joanna (Female)</option>
+                            <option value="Matthew">Matthew (Male)</option>
+                            <option value="Ivy">Ivy (Child)</option>
+                            <option value="Justin">Justin (Child)</option>
+                            <option value="Kendra">Kendra (Female)</option>
+                            <option value="Kimberly">Kimberly (Female)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="formatSelect">Format:</label>
+                        <select id="formatSelect">
+                            <option value="mp3">MP3</option>
+                            <option value="ogg_vorbis">OGG</option>
+                            <option value="pcm">PCM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="synthesizeBtn" onclick="synthesizeSpeech()">
+                    🔄 Generate Speech
+                </button>
+            </div>
+
+            <div class="output-section" id="outputSection" style="display: none;">
+                <h3>Generated Audio</h3>
+                <audio id="audioPlayer" controls></audio>
+                <div class="audio-info">
+                    <p id="audioInfo"></p>
+                    <a id="downloadLink" class="download-btn" download>
+                        💾 Download Audio
+                    </a>
+                </div>
+            </div>
+
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Processing your text...</p>
+            </div>
+
+            <div class="error" id="error" style="display: none;"></div>
+        </main>
+
+        <footer>
+            <p>🔄 Sankofa - "Go back and get it" | Built with AWS Polly</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
