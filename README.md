@@ -20,6 +20,8 @@ Key design principles:
 
 ---
 
+<img width="1074" height="790" alt="image" src="https://github.com/user-attachments/assets/d5ec7e4c-5b36-4ba7-966d-4bc0e3397481" />
+
 Quick Start
 Prerequisites
 AWS Account with appropriate permissions
